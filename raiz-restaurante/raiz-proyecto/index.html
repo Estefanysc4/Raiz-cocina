@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raíz — Cocina de Autor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">Raíz</a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#reservas" class="btn-reserva">Reservar mesa</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-text" aria-hidden="true">RAÍZ</div>
+
+    <svg class="hero-branch" viewBox="0 0 320 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M160 460 C160 400, 140 360, 120 300 C100 240, 80 200, 90 140 C100 80, 130 50, 160 20" stroke="#C9A227" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+      <path d="M130 300 C110 280, 70 270, 40 260" stroke="#C9A227" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.4"/>
+      <path d="M120 240 C100 210, 90 180, 110 160" stroke="#C9A227" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.35"/>
+      <path d="M100 180 C120 165, 150 160, 170 140" stroke="#C9A227" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.3"/>
+      <path d="M140 130 C120 100, 100 80, 120 60" stroke="#C9A227" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.3"/>
+      <ellipse cx="42" cy="258" rx="18" ry="10" fill="#C9A227" opacity="0.2" transform="rotate(-30 42 258)"/>
+      <ellipse cx="113" cy="158" rx="14" ry="8" fill="#C9A227" opacity="0.2" transform="rotate(20 113 158)"/>
+      <ellipse cx="172" cy="138" rx="16" ry="9" fill="#C9A227" opacity="0.2" transform="rotate(-10 172 138)"/>
+      <ellipse cx="122" cy="58" rx="13" ry="7" fill="#C9A227" opacity="0.2" transform="rotate(15 122 58)"/>
+    </svg>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">Cocina de autor — Bogotá</span>
+      <h1 class="hero-title">
+        Donde la tierra<br />
+        <em>se sienta a la mesa</em>
+      </h1>
+      <p class="hero-sub">Ingredientes del campo colombiano interpretados con técnica y respeto por el producto.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">Ver el menú</a>
+        <a href="#nosotros" class="btn-ghost">Nuestra historia</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- PLATO DEL DÍA -->
+  <section class="plato-dia" id="plato-dia">
+    <div class="plato-inner">
+      <div class="plato-texto">
+        <span class="label-seccion">Hoy en cocina</span>
+        <h2 class="plato-titulo">Pato lacado<br />al tamarindo</h2>
+        <p class="plato-desc">Pechuga de pato del Llano con reducción de tamarindo silvestre, cremoso de ahuyama ahumada y chips de plátano verde. Un plato que nació de una tarde en el mercado de Paloquemao.</p>
+        <div class="plato-meta">
+          <span class="plato-precio">$ 68.000</span>
+          <span class="plato-disponible">Disponible hoy</span>
+        </div>
+        <a href="#reservas" class="btn-primary">Reservar para este plato</a>
+      </div>
+      <div class="plato-sello-wrap">
+        <div class="plato-imagen-marco">
+          <div class="plato-imagen-placeholder" aria-label="Imagen del plato del día"></div>
+        </div>
+        <div class="sello" aria-label="Plato del día">
+          <svg viewBox="0 0 140 140" class="sello-svg">
+            <defs>
+              <path id="sello-circle" d="M70,70 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/>
+            </defs>
+            <circle cx="70" cy="70" r="62" fill="#C9A227" />
+            <circle cx="70" cy="70" r="55" fill="none" stroke="#FAF6EE" stroke-width="0.8" stroke-dasharray="3 4"/>
+            <text font-family="'Playfair Display', serif" font-size="11" fill="#FAF6EE" font-style="italic" letter-spacing="2">
+              <textPath href="#sello-circle">· PLATO DEL DÍA · RAÍZ BOGOTÁ · PLATO DEL DÍA · RAÍZ ·</textPath>
+            </text>
+            <text x="70" y="64" text-anchor="middle" font-family="'Playfair Display', serif" font-size="13" fill="#2D3527" font-weight="700">HOY</text>
+            <text x="70" y="82" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="9" fill="#2D3527" letter-spacing="1">EN COCINA</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="nosotros" id="nosotros">
+    <div class="nosotros-inner">
+      <div class="nosotros-media">
+        <div class="nosotros-foto-placeholder" aria-label="Fotografía del restaurante"></div>
+        <div class="nosotros-stat">
+          <span class="stat-num">12</span>
+          <span class="stat-label">años cultivando sabor</span>
+        </div>
+      </div>
+      <div class="nosotros-texto">
+        <span class="label-seccion">Quiénes somos</span>
+        <h2>Una cocina con memoria</h2>
+        <p>Raíz nació del convencimiento de que los mejores ingredientes ya están aquí. Trabajamos con agricultores de Boyacá, Nariño y el Eje Cafetero que cultivan con tiempo y sin atajos.</p>
+        <p>Nuestra carta cambia cada semana. No por moda, sino porque el campo cambia, y nosotros escuchamos.</p>
+        <div class="nosotros-valores">
+          <div class="valor-item">
+            <span class="valor-num">01</span>
+            <span class="valor-txt">Producto de temporada</span>
+          </div>
+          <div class="valor-item">
+            <span class="valor-num">02</span>
+            <span class="valor-txt">Proveedores directos</span>
+          </div>
+          <div class="valor-item">
+            <span class="valor-num">03</span>
+            <span class="valor-txt">Sin desperdicio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENÚ INTERACTIVO -->
+  <section class="menu-section" id="menu">
+    <div class="menu-header">
+      <span class="label-seccion">La carta</span>
+      <h2>Menú de temporada</h2>
+      <p class="menu-subtitulo">Todos los ingredientes son de origen colombiano y cambian según la cosecha.</p>
+    </div>
+    <div class="menu-tabs" role="tablist" aria-label="Categorías del menú">
+      <button class="tab active" role="tab" aria-selected="true" data-cat="entrantes">Entrantes</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="principales">Principales</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="postres">Postres</button>
+      <button class="tab" role="tab" aria-selected="false" data-cat="bebidas">Bebidas</button>
+    </div>
+    <div class="menu-grid" id="menu-grid"></div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section class="reservas" id="reservas">
+    <div class="reservas-inner">
+      <div class="reservas-texto">
+        <span class="label-seccion" style="color:#C9A227;">¿Nos visitas?</span>
+        <h2>Reserva tu mesa</h2>
+        <p>Atendemos de martes a domingo, en dos servicios: mediodía (12:30 – 15:00) y noche (19:00 – 23:00).</p>
+        <address class="reservas-datos">
+          <span>Calle 69A #5-76, Chapinero, Bogotá</span>
+          <a href="tel:+5716012345">+57 (601) 234-5678</a>
+          <a href="mailto:hola@raiz.com.co">hola@raiz.com.co</a>
+        </address>
+      </div>
+      <form class="reservas-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu nombre" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="personas">Personas</label>
+            <select id="personas">
+              <option>1 persona</option>
+              <option selected>2 personas</option>
+              <option>3 personas</option>
+              <option>4 personas</option>
+              <option>5 o más</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" />
+          </div>
+          <div class="form-group">
+            <label for="servicio">Servicio</label>
+            <select id="servicio">
+              <option>Mediodía (12:30)</option>
+              <option>Noche (19:00)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="notas">Notas o alergias</label>
+          <textarea id="notas" rows="3" placeholder="¿Algo que debamos saber?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Confirmar reserva</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="footer-inner">
+      <div class="footer-marca">
+        <span class="footer-logo">Raíz</span>
+        <p>Cocina de autor colombiana.<br />Chapinero, Bogotá.</p>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Horario</span>
+        <ul>
+          <li>Mar – Vie: 12:30 y 19:00</li>
+          <li>Sáb – Dom: 12:00 y 19:00</li>
+          <li>Lunes: cerrado</li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Síguenos</span>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copy"><span>© 2025 Raíz Restaurante</span></div>
+  </footer>
+
+  <script src="js/menu-data.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
